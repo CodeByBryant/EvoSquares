@@ -94,6 +94,8 @@ This project is licensed under the terms of the LICENSE file included in this re
 
 ---
 
-### **Contact**
+## **Contact)**
 
-For questions or feedback, please contact Bryant Ejorh.
+For questions or feedback, please contact me.
+
+Thanks goes [Clear Code](https://github.com/clear-code-projects) for basic system.
