@@ -1,14 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "AgentCount": 1,
-  "DefaultAgentColor": "#296829",
+  "AgentCount": 20,
   "DefaultAgentSize": { "width": 50, "height": 50 },
   "EnableRotation": true,
   "RotationSpeedRange": { "min": 0.01, "max": 0.05 },
   "MovementSpeedRange": { "min": 1, "max": 5 },
   "Rendering": {
-    "StrokeColor": "#FF0000",
     "FillColor": "#296829",
     "StrokeWidth": 2
-  }
+  },
+  "Sensor": {
+    "RayCount": 5,
+    "RayLength": 150
+  },
+  "RenderSensor": true
 }

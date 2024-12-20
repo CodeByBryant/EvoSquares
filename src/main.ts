@@ -4,7 +4,7 @@ import "./main.css";
 import AgentConfigData from "../utils/AgentConfig.json" assert { type: "json" };
 
 // Import the Agent class
-import Agent from "./Agent";
+import { Agent, Food } from "./Agent";
 
 // Setup canvas
 const canvas = document.createElement("canvas");
@@ -14,6 +14,7 @@ const ctx = canvas.getContext("2d")!;
 
 // Create a list to store the agents
 const agents: Agent[] = [];
+const food: Food[] = [];
 
 // Generate agents based on AgentConfigData
 const spawnAgents = () => {
@@ -43,7 +44,9 @@ const spawnAgents = () => {
 const renderAgents = () => {
   agents.forEach((agent) => {
     // Update the agent's geometry
-    agent.update();
+    agent.update(agents);
+
+    if (AgentConfigData.RenderSensor) agent.Sensor.render(ctx);
 
     // Render the agent
     ctx.beginPath();
@@ -63,7 +66,7 @@ const renderAgents = () => {
     // Fill and stroke the polygon
     ctx.fillStyle = AgentConfigData.Rendering.FillColor;
     ctx.fill();
-    ctx.strokeStyle = AgentConfigData.Rendering.StrokeColor;
+    ctx.strokeStyle = lightenHexColor(AgentConfigData.Rendering.FillColor, 1);
     ctx.lineWidth = AgentConfigData.Rendering.StrokeWidth;
     ctx.stroke();
   });
@@ -91,3 +94,29 @@ const Update = () => {
 
 // Start the animation loop
 Update();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// UTILITY FUNCTIONS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function lightenHexColor(hex: string, percentage: number): string {
+  // Remove the '#' if it exists
+  hex = hex.replace("#", "");
+
+  // Convert hex to RGB
+  let r: number = parseInt(hex.substring(0, 2), 16);
+  let g: number = parseInt(hex.substring(2, 4), 16);
+  let b: number = parseInt(hex.substring(4, 6), 16);
+
+  // Increase the RGB values by the percentage (15%)
+  r = Math.min(255, Math.round(r * (1 + percentage)));
+  g = Math.min(255, Math.round(g * (1 + percentage)));
+  b = Math.min(255, Math.round(b * (1 + percentage)));
+
+  // Convert RGB back to hex
+  let newHex: string =
+    "#" +
+    ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+
+  return newHex;
+}
