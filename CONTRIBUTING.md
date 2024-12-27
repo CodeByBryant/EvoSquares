@@ -57,7 +57,7 @@ If you encounter a bug or want to request a new feature:
 ## Suggesting Enhancements
 
 We’re always open to new ideas! If you have an idea for a feature or improvement:
-- Check the existing [Issues](../../issues) or [Discussions](../../discussions) to see if someone else has already proposed it.
+- Check the existing [Issues](../../issues)  to see if someone else has already proposed it.
 - Create a new issue labeled **enhancement** with a detailed description of your idea.
 
 ---
