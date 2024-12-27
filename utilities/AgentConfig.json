@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "AgentCount": 20,
+  "AgentCount": 10,
   "DefaultAgentSize": { "width": 50, "height": 50 },
   "EnableRotation": true,
-  "RotationSpeedRange": { "min": 0.01, "max": 0.05 },
-  "MovementSpeedRange": { "min": 1, "max": 5 },
+  "MovementSpeed": 1,
+  "RotationSpeed": 0.1,
   "Rendering": {
     "FillColor": "#296829",
     "StrokeWidth": 2
@@ -13,5 +13,10 @@
     "RayCount": 5,
     "RayLength": 150
   },
-  "RenderSensor": true
+  "RenderSensor": true,
+
+  "FoodSettings": {
+    "SpawnCount": 25,
+    "FoodColor": "#e7e751ce"
+  }
 }
