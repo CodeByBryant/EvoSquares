@@ -13,7 +13,7 @@
  */
 
 import "./main.css";
-import AgentConfigData from "../utilities/AgentConfig.json" assert { type: "json" };
+import AgentConfigData from "./utilities/AgentConfig.json" assert { type: "json" };
 import { Agent, Food } from "./Agent";
 
 /** 

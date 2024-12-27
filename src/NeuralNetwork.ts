@@ -7,7 +7,7 @@
  */
 
 import { Agent } from "./Agent";
-import { Point } from "../utilities/utilities.ts";
+import { Point } from "./utilities/utilities.ts";
 
 /**
  * Class representing a neural network.

@@ -7,8 +7,8 @@
  */
 
 import { NeuralNetwork, Sensor } from "./NeuralNetwork";
-import AgentConfigData from "../utilities/AgentConfig.json" assert { type: "json" };
-import { Utilities } from "../utilities/utilities.ts";
+import AgentConfigData from "./utilities/AgentConfig.json" assert { type: "json" };
+import { Utilities } from "./utilities/utilities.ts";
 import { canvasVariables } from "./main";
 
 type Vertex = { x: number; y: number }; // Defines a type for a 2D point (vertex)
