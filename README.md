@@ -105,7 +105,3 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Author
 
 Developed with ❤️ by **Bryant Ejorh** ([CodeByBryant](https://github.com/CodeByBryant)).
-
----
-
-Let me know if you’d like to tweak or expand any section!
