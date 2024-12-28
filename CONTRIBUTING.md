@@ -1,7 +1,3 @@
-Here's a sample **CONTRIBUTING.md** for your EvoSquares GitHub repository. Customize it to fit your specific needs and workflow.
-
----
-
 # Contributing to EvoSquares
 
 Thank you for considering contributing to **EvoSquares**! We welcome all kinds of contributions, including bug reports, feature requests, documentation updates, and code contributions.
