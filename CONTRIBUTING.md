@@ -19,7 +19,8 @@ Thank you for considering contributing to **EvoSquares**! We welcome all kinds o
    Create your own copy of the repository by clicking the "Fork" button at the top-right of the repository page.
 
 2. **Clone Your Fork**:  
-   Clone your fork to your local development environment:  
+   Clone your fork to your local development environment:
+
    ```bash
    git clone https://github.com/your-username/EvoSquares.git
    ```
@@ -28,7 +29,7 @@ Thank you for considering contributing to **EvoSquares**! We welcome all kinds o
    Follow the instructions in the [README.md](README.md) file to set up the project locally.
 
 4. **Create a Branch**:  
-   Create a branch for your work to keep your changes organized:  
+   Create a branch for your work to keep your changes organized:
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -53,7 +54,8 @@ If you encounter a bug or want to request a new feature:
 ## Suggesting Enhancements
 
 We’re always open to new ideas! If you have an idea for a feature or improvement:
-- Check the existing [Issues](../../issues)  to see if someone else has already proposed it.
+
+- Check the existing [Issues](../../issues) to see if someone else has already proposed it.
 - Create a new issue labeled **enhancement** with a detailed description of your idea.
 
 ---
@@ -67,7 +69,8 @@ We’re always open to new ideas! If you have an idea for a feature or improveme
    Before submitting your changes, test them thoroughly to ensure they work as intended.
 
 3. **Push Your Branch**:  
-   Push your changes to your forked repository:  
+   Push your changes to your forked repository:
+
    ```bash
    git push origin feature/your-feature-name
    ```

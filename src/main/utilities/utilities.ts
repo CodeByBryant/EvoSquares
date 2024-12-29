@@ -7,7 +7,7 @@
 
 */
 
-export type Point = { x: number; y: number };
+export type Point = { x: number; y: number }
 
 export namespace Utilities {
   /**
@@ -36,26 +36,22 @@ export namespace Utilities {
 
   export const lightenHexColor = (hex: string, percentage: number): string => {
     // Remove the '#' if it exists
-    hex = hex.replace("#", "");
+    hex = hex.replace('#', '')
 
     // Convert hex to RGB
-    let r: number = parseInt(hex.substring(0, 2), 16);
-    let g: number = parseInt(hex.substring(2, 4), 16);
-    let b: number = parseInt(hex.substring(4, 6), 16);
+    let r: number = parseInt(hex.substring(0, 2), 16)
+    let g: number = parseInt(hex.substring(2, 4), 16)
+    let b: number = parseInt(hex.substring(4, 6), 16)
 
     // Increase the RGB values by the percentage (15%)
-    r = Math.min(255, Math.round(r * (1 + percentage)));
-    g = Math.min(255, Math.round(g * (1 + percentage)));
-    b = Math.min(255, Math.round(b * (1 + percentage)));
+    r = Math.min(255, Math.round(r * (1 + percentage)))
+    g = Math.min(255, Math.round(g * (1 + percentage)))
+    b = Math.min(255, Math.round(b * (1 + percentage)))
 
     // Convert RGB back to hex
     let newHex: string =
-      "#" +
-      ((1 << 24) + (r << 16) + (g << 8) + b)
-        .toString(16)
-        .slice(1)
-        .toUpperCase();
+      '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase()
 
-    return newHex;
-  };
+    return newHex
+  }
 }

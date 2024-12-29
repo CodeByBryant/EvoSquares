@@ -9,6 +9,7 @@ If you discover a security vulnerability in **EvoSquares**, please help us addre
 
 2. **Contact Us Directly**:  
    Go to the Security tab under the repository name and click on 'Report a vulnerability'
+
    - A detailed description of the vulnerability.
    - Steps to reproduce the issue.
    - Any relevant code or screenshots.
@@ -21,6 +22,7 @@ If you discover a security vulnerability in **EvoSquares**, please help us addre
 ## Scope of Security
 
 We are primarily concerned with vulnerabilities that:
+
 - Allow unauthorized access to user data.
 - Enable denial-of-service (DoS) attacks.
 - Cause unintended behavior that could affect data integrity or system stability.
@@ -30,6 +32,7 @@ We are primarily concerned with vulnerabilities that:
 ## Security Best Practices
 
 To ensure your own security while contributing to EvoSquares, follow these guidelines:
+
 - Keep your local development environment updated.
 - Avoid committing sensitive information, such as API keys or personal data, to the repository.
 

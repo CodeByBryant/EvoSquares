@@ -4,7 +4,6 @@ about: Create a report to help us improve
 title: BUG REPORT
 labels: bug
 assignees: ''
-
 ---
 
 **Thank you for reporting a bug! Please fill out the following sections to help us understand and reproduce the issue.**
@@ -25,6 +24,7 @@ _The application crashes when I try to open the settings menu._
 3. **Step 3**: Describe the final action that leads to the bug.
 
 **Example:**
+
 1. Open the app.
 2. Go to the settings menu.
 3. The app crashes.
